@@ -1,7 +1,9 @@
 import ctypes
-import numpy as np
 
-clibrary = ctypes.CDLL("C:/Users/jayan/code_fun/LearnC/ctypes_test/ctypes-demo/clibrary.so")
+# add path to so file
+clibrary = ctypes.CDLL(
+    "C:/Users/jayan/code_fun/LearnC/ctypes_test/ctypes-demo/clibrary.so"
+)
 
 array_add = clibrary.arrayAdd
 
